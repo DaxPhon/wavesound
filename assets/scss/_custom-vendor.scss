@@ -1,0 +1,58 @@
+// font awesome
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("#{$fontPath}/fontawesome/fa-solid-900.eot");
+  src: url("#{$fontPath}/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+  url("#{$fontPath}/fontawesome/fa-solid-900.woff2") format("woff2"),
+  url("#{$fontPath}/fontawesome/fa-solid-900.woff") format("woff"),
+  url("#{$fontPath}/fontawesome/fa-solid-900.ttf") format("truetype"),
+  url("#{$fontPath}/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+// bootstrap
+$grid-gutter-width:           2rem;
+
+@mixin make-container() {
+  width: 100%;
+  padding-right: ($grid-gutter-width / 2);
+  padding-left: ($grid-gutter-width / 2);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: 0 20px;
+
+  &-link {
+    border: 1px solid $ws-secondary;
+    color: $ws-secondary;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: 1px solid $custom-black;
+      color: $custom-black;
+      text-decoration: none;
+    }
+  }
+  &-primary {
+    border: $ws-secondary;
+    background: $ws-secondary;
+    color: $ws-secondary-text;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $ws-secondary-60;
+    }
+  }
+}

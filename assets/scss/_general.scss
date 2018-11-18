@@ -1,0 +1,60 @@
+// custom scrollbar working only on webkit browsers unfortunately
+::-webkit-scrollbar {
+  display: none;
+}
+
+// only for admins
+.customize-support {
+  @media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed;
+    }
+  }
+  .main-nav {
+    top: 46px;
+
+    @media (min-width: 783px) { top: 32px; }
+  }
+}
+
+body {
+  word-wrap: break-word;
+}
+a {
+  color: $ws-secondary;
+  text-decoration: underline;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $custom-black;
+  }
+}
+.main {
+  section {
+    padding: 1rem 0;
+
+    &.grey-section {
+      background-color: $ws-light-grey;
+    }
+    &.splitted-with-image {
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+
+      .image-content {
+
+        img {
+          width: 100%;
+          position: absolute;
+        }
+      }
+      .text-content {
+        background: rgba(255,255,255,0.75);
+        position: relative;
+        padding: 1rem;
+        margin: 1rem;
+      }
+    }
+  }
+}

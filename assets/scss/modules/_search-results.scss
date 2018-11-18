@@ -1,0 +1,19 @@
+.search-title {
+  margin-bottom: 2rem;
+}
+.search-results {
+  padding: 0;
+  list-style-type: none;
+
+  .result {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .search-highlight {
+    background: $ws-secondary;
+    color: $ws-secondary-text;
+  }
+}

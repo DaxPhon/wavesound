@@ -1,0 +1,24 @@
+/*
+Theme Name: Wavesound
+Author: David Kaliczok (@DaxPhon)
+Description: A template created for Wavesound Herborn e. V.
+Version: 0.1
+*/
+
+// vendor
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+// general stylings
+@import "variables";
+@import "fonts";
+@import "color";
+@import "custom-vendor";
+@import "general";
+
+// modules
+@import "modules/header";
+@import "modules/footer";
+
+@import "modules/search-results";
+@import "modules/events";
