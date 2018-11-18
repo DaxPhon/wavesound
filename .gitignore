@@ -1,0 +1,4 @@
+# ignore these paths #
+###################
+assets/.sass-cache*
+node_modules*
